@@ -7,6 +7,16 @@ function logger(name) {
     console.log(name);
 }
 
+
+//Returns File Path with Filename
+// console.log(__filename);
+
+//Returns File Path to directory
+// console.log(__dirname);
+console.log(require);
+console.log(exports);
+
+
 // now we will use the module object
 // to export out functions and variables.
 

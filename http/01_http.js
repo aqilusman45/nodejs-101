@@ -15,9 +15,12 @@ const server = http.createServer((req, res) => {
   
   if (req.url === '/') {
   res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  let htmlData = fs.readFileSync('./index.html');
-  res.write(htmlData);
+  res.setHeader('Content-Type', 'application/json');
+  // let htmlData = fs.readFileSync('./login.html');
+  let jsData = {
+    name: "hello"
+  }
+  res.write(JSON.stringify(jsData));
   res.end();
   }
   
