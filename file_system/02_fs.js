@@ -7,3 +7,7 @@ const files = fs.readdirSync('./'); // Will take time according to folder struct
 //I/O is blocked in sync
 
 console.log("Sync 2", files);
+
+
+
+//PARSE Method
